@@ -1,0 +1,633 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+        href="css/style.css">
+
+    <title>Looop Ltda!</title>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
+    <header>
+
+        <h1 class="logo">
+            Looop Ltda!
+        </h1>
+
+
+         <header>
+   
+
+    <div class="area-busca">
+      <input type="text" id="campo-busca" placeholder="Buscar produto...">
+      <button id="botao-busca">Buscar</button>
+    </div>
+
+    <button id="botao-carrinho">
+      Carrinho (<span id="quantidade-carrinho">0</span>)
+    </button>
+  </header>
+
+  <aside id="carrinho" class="escondido">
+    <h2>Meu carrinho</h2>
+
+    <p id="carrinho-vazio">Seu carrinho está vazio.</p>
+    <ul id="itens-carrinho"></ul>
+
+    <p class="total">Total: <span id="valor-total">R$ 0,00</span></p>
+
+    <button id="botao-finalizar">Finalizar compra</button>
+    <button id="botao-fechar" class="botao-secundario">Continuar comprando</button>
+  </aside>
+    </header>
+
+
+
+    <!-- =========================
+         CONTEÚDO PRINCIPAL
+    ========================== -->
+
+    <main>
+
+
+        <h1>
+            Bem-vindos, a bordo da Looop Ltda!
+        </h1>
+
+
+        <h2 id="titulo-lista">
+            Todas as viagens
+        </h2>
+
+
+
+        <!-- =========================
+             PRODUTOS
+        ========================== -->
+
+        <div id="produtos" class="produtos">
+
+
+            <!-- NEW YORK -->
+
+            <div class="card" data-id="1">
+
+                <img
+                    src="img/newyork.png"
+                    alt="New York"
+                >
+
+
+                <div class="card-info">
+
+                    <h2>
+                        New York
+                    </h2>
+
+
+                    <p>
+
+                        Viagem para a cidade de
+                        New York - EUA.<br>
+
+                        Com duração de 10 dias.<br>
+
+                        Passagens de ida e volta.
+
+                    </p>
+
+
+                    <h3>
+                        R$ 5.500,00
+                    </h3>
+
+                </div>
+
+
+                <button
+                    class="botao-adicionar"
+                    data-id="1"
+                >
+
+                    Adicionar ao carrinho
+
+                </button>
+
+            </div>
+
+
+
+            <!-- BONITO -->
+
+            <div class="card" data-id="2">
+
+                <img
+                    src="img/bonito-MT.png"
+                    alt="Bonito - MT"
+                >
+
+
+                <div class="card-info">
+
+                    <h2>
+                        Bonito - MT
+                    </h2>
+
+
+                    <p>
+
+                        Viagem para a cidade de
+                        Bonito - MT.<br>
+
+                        Com duração de 5 dias.<br>
+
+                        Passagens de ida e volta.
+
+                    </p>
+
+
+                    <h3>
+                        R$ 1.559,90
+                    </h3>
+
+                </div>
+
+
+                <button
+                    class="botao-adicionar"
+                    data-id="2"
+                >
+
+                    Adicionar ao carrinho
+
+                </button>
+
+            </div>
+
+
+
+            <!-- BOLÍVIA -->
+
+            <div class="card" data-id="3">
+
+                <img
+                    src="img/bolivia.png"
+                    alt="Bolívia"
+                >
+
+
+                <div class="card-info">
+
+                    <h2>
+                        Bolívia
+                    </h2>
+
+
+                    <p>
+
+                        Viagem para o país de
+                        Bolívia.<br>
+
+                        Com duração de 7 dias.<br>
+
+                        Passagens de ida e volta.
+
+                    </p>
+
+
+                    <h3>
+                        R$ 1.899,90
+                    </h3>
+
+                </div>
+
+
+                <button
+                    class="botao-adicionar"
+                    data-id="3"
+                >
+
+                    Adicionar ao carrinho
+
+                </button>
+
+            </div>
+
+
+
+            <!-- CANADA -->
+
+            <div class="card" data-id="4">
+
+                <img
+                    src="img/canada.png"
+                    alt="Canada"
+                >
+
+
+                <div class="card-info">
+
+                    <h2>
+                        Canada
+                    </h2>
+
+
+                    <p>
+
+                        Viagem para o país de
+                        Canada.<br>
+
+                        Com duração de 5 dias.<br>
+
+                        Passagens de ida e volta.
+
+                    </p>
+
+
+                    <h3>
+                        R$ 4.499,99
+                    </h3>
+
+                </div>
+
+
+                <button
+                    class="botao-adicionar"
+                    data-id="4"
+                >
+
+                    Adicionar ao carrinho
+
+                </button>
+
+            </div>
+
+
+
+            <!-- EGITO -->
+
+            <div class="card" data-id="5">
+
+                <img
+                    src="img/egito.png"
+                    alt="Egito"
+                >
+
+
+                <div class="card-info">
+
+                    <h2>
+                        Egito
+                    </h2>
+
+
+                    <p>
+
+                        Viagem para o país de
+                        Egito.<br>
+
+                        Com duração de 5 dias.<br>
+
+                        Passagens de ida e volta.
+
+                    </p>
+
+
+                    <h3>
+                        R$ 6.999,90
+                    </h3>
+
+                </div>
+
+
+                <button
+                    class="botao-adicionar"
+                    data-id="5"
+                >
+
+                    Adicionar ao carrinho
+
+                </button>
+
+            </div>
+
+
+
+            <!-- HOLANDA -->
+
+            <div class="card" data-id="6">
+
+                <img
+                    src="img/holanda.png"
+                    alt="Holanda"
+                >
+
+
+                <div class="card-info">
+
+                    <h2>
+                        Holanda
+                    </h2>
+
+
+                    <p>
+
+                        Viagem para o país de
+                        Holanda.<br>
+
+                        Com duração de 5 dias.<br>
+
+                        Passagens de ida e volta.
+
+                    </p>
+
+
+                    <h3>
+                        R$ 6.249,90
+                    </h3>
+
+                </div>
+
+
+                <button
+                    class="botao-adicionar"
+                    data-id="6"
+                >
+
+                    Adicionar ao carrinho
+
+                </button>
+
+            </div>
+
+
+
+            <!-- MALDIVAS -->
+
+            <div class="card" data-id="7">
+
+                <img
+                    src="img/maldivas.png"
+                    alt="Ilhas Maldivas"
+                >
+
+
+                <div class="card-info">
+
+                    <h2>
+                        Ilhas Maldivas
+                    </h2>
+
+
+                    <p>
+
+                        Viagem para as ilhas
+                        Maldivas.<br>
+
+                        Com duração de 7 dias.<br>
+
+                        Passagens de ida e volta.
+
+                    </p>
+
+
+                    <h3>
+                        R$ 8.999,90
+                    </h3>
+
+                </div>
+
+
+                <button
+                    class="botao-adicionar"
+                    data-id="7"
+                >
+
+                    Adicionar ao carrinho
+
+                </button>
+
+            </div>
+
+
+
+            <!-- PARIS -->
+
+            <div class="card" data-id="8">
+
+                <img
+                    src="img/paris.png"
+                    alt="Paris"
+                >
+
+
+                <div class="card-info">
+
+                    <h2>
+                        Paris
+                    </h2>
+
+
+                    <p>
+
+                        Viagem para a cidade de
+                        Paris.<br>
+
+                        Com duração de 5 dias.<br>
+
+                        Passagens de ida e volta.
+
+                    </p>
+
+
+                    <h3>
+                        R$ 5.999,90
+                    </h3>
+
+                </div>
+
+
+                <button
+                    class="botao-adicionar"
+                    data-id="8"
+                >
+
+                    Adicionar ao carrinho
+
+                </button>
+
+            </div>
+
+
+
+            <!-- SUÍÇA -->
+
+            <div class="card" data-id="9">
+
+                <img
+                    src="img/suica.png"
+                    alt="Suíça"
+                >
+
+
+                <div class="card-info">
+
+                    <h2>
+                        Suíça
+                    </h2>
+
+
+                    <p>
+
+                        Viagem para a cidade de
+                        Suíça.<br>
+
+                        Com duração de 5 dias.<br>
+
+                        Passagens de ida e volta.
+
+                    </p>
+
+
+                    <h3>
+                        R$ 6.897,90
+                    </h3>
+
+                </div>
+
+
+                <button
+                    class="botao-adicionar"
+                    data-id="9"
+                >
+
+                    Adicionar ao carrinho
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+
+
+        <p class="viagens">
+            Confira nossas viagens!
+        </p>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         CARRINHO
+    ========================== -->
+
+    <aside
+        id="carrinho"
+        class="escondido"
+    >
+
+
+        <h2>
+            Meu carrinho
+        </h2>
+
+
+        <p id="carrinho-vazio">
+
+            Seu carrinho está vazio.
+
+        </p>
+
+
+        <!-- Produtos adicionados -->
+
+        <ul id="itens-carrinho">
+
+        </ul>
+
+
+        <!-- Total -->
+
+        <p class="total">
+
+            Total:
+            <span id="valor-total">
+                R$ 0,00
+            </span>
+
+        </p>
+
+
+        <!-- Finalizar -->
+
+        <button id="botao-finalizar">
+
+            Finalizar compra
+
+        </button>
+
+
+        <!-- Fechar carrinho -->
+
+        <button
+            id="botao-fechar"
+            class="botao-secundario"
+        >
+
+            Continuar comprando
+
+        </button>
+
+
+    </aside>
+
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer>
+
+        <p>
+
+            Projeto de estudo -
+            loja feita com HTML,
+            CSS e JavaScript
+
+        </p>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
+
