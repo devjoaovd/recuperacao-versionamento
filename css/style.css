@@ -1,0 +1,452 @@
+
+/* ---------- CONFIGURAÇÃO GERAL ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #bc8a5f;
+    color: #2b2b2b;
+}
+
+
+/* ---------- CABEÇALHO ---------- */
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    padding: 16px 24px;
+
+    background-color: #ffffff;
+
+    border-bottom: 1px solid #e0dcd3;
+}
+
+
+/* ---------- LOGO ---------- */
+
+.logo {
+    margin: 0;
+    font-size: 22px;
+}
+
+
+/* ---------- ÁREA DE BUSCA ---------- */
+
+.area-busca {
+    display: flex;
+    flex: 1;
+
+    gap: 8px;
+
+    min-width: 240px;
+}
+
+
+#campo-busca {
+    flex: 1;
+
+    padding: 10px 12px;
+
+    font-size: 15px;
+
+    border: 1px solid #cfc9bd;
+
+    border-radius: 4px;
+}
+
+
+#campo-busca:focus {
+    outline: 2px solid #c56a2d;
+}
+
+
+/* ---------- BOTÕES GERAIS ---------- */
+
+button {
+    padding: 10px 16px;
+
+    font-size: 15px;
+
+    font-family: inherit;
+
+    color: #ffffff;
+
+    background-color: #c56a2d;
+
+    border: none;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #a95720;
+}
+
+
+/* ---------- CONTEÚDO PRINCIPAL ---------- */
+
+main > h1 {
+    color: #ffffff;
+
+    text-align: left;
+
+    margin-left: 20px;
+}
+
+
+#titulo-lista {
+    color: #ffffff;
+
+    text-align: left;
+
+    margin-left: 20px;
+}
+
+
+/* ---------- PRODUTOS ---------- */
+
+.produtos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+
+    padding: 20px;
+}
+
+
+/* ---------- CARD ---------- */
+
+.card {
+    border: 1px solid #dddddd;
+
+    border-radius: 10px;
+
+    padding: 10px;
+
+    background-color: #ffffff;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+
+    overflow: auto;
+
+    max-height: 400px;
+}
+
+
+/* ---------- IMAGENS ---------- */
+
+.card img {
+    width: 100%;
+
+    height: 150px;
+
+    object-fit: contain;
+
+    border-radius: 8px;
+}
+
+
+/* ---------- INFORMAÇÕES DOS CARDS ---------- */
+
+.card-info h2 {
+    margin: 8px 0;
+
+    font-size: 19px;
+}
+
+
+.card-info p {
+    margin: 8px 0;
+
+    white-space: normal;
+
+    font-size: 14px;
+}
+
+
+.card-info h3 {
+    margin-top: 8px;
+
+    font-size: 17px;
+}
+
+
+/* ---------- BOTÃO ADICIONAR ---------- */
+
+.botao-adicionar {
+    display: block;
+
+    margin: 10px auto 0;
+}
+
+
+/* ---------- FRASE FINAL ---------- */
+
+.viagens {
+    color: #ffffff;
+
+    text-align: left;
+
+    margin: 10px 20px 25px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* ==================================================
+   CARRINHO
+   ================================================== */
+
+#carrinho {
+    position: fixed;
+
+    top: 0;
+
+    right: 0;
+
+    width: 350px;
+
+    height: 100%;
+
+    padding: 24px;
+
+    overflow-y: auto;
+
+    background-color: #ffffff;
+
+    border-left: 1px solid #e0dcd3;
+
+    box-shadow:
+        -3px 0 10px rgba(0, 0, 0, 0.15);
+
+    z-index: 10;
+}
+
+
+/* ---------- TÍTULO DO CARRINHO ---------- */
+
+#carrinho h2 {
+    margin-top: 0;
+
+    margin-bottom: 20px;
+
+    font-size: 22px;
+
+    text-align: center;
+}
+
+
+/* ---------- MENSAGEM CARRINHO VAZIO ---------- */
+
+#carrinho-vazio {
+    text-align: center;
+
+    color: #777777;
+
+    padding: 20px 0;
+}
+
+
+/* ---------- LISTA ---------- */
+
+#itens-carrinho {
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+/* ---------- ITEM DO CARRINHO ---------- */
+
+.item-carrinho {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+.item-carrinho strong {
+    font-size: 16px;
+}
+
+
+.item-carrinho span {
+    font-size: 14px;
+
+    color: #666666;
+}
+
+
+/* ---------- BOTÃO REMOVER ---------- */
+
+.botao-remover {
+    width: auto !important;
+
+    margin-top: 5px;
+
+    padding: 6px 10px;
+
+    background-color: #e8e3d9;
+
+    color: #2b2b2b;
+
+    font-size: 13px;
+}
+
+
+.botao-remover:hover {
+    background-color: #d5cec0;
+}
+
+
+/* ---------- TOTAL ---------- */
+
+.total {
+    margin: 20px 0;
+
+    padding-top: 10px;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    border-top: 1px solid #dddddd;
+}
+
+
+/* ==================================================
+   BOTÃO FINALIZAR COMPRA
+   ================================================== */
+
+#botao-finalizar {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 13px;
+
+    background-color: #007bff;
+
+    color: #ffffff;
+
+    border: none;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+#botao-finalizar:hover {
+    background-color: #0056b3;
+}
+
+
+/* ---------- BOTÃO CONTINUAR COMPRANDO ---------- */
+
+#botao-fechar {
+    width: 100%;
+
+    margin-top: 8px;
+}
+
+
+.botao-secundario {
+    color: #2b2b2b;
+
+    background-color: #e8e3d9;
+}
+
+
+.botao-secundario:hover {
+    background-color: #dbd4c6;
+}
+
+
+/* ---------- ESCONDER CARRINHO ---------- */
+
+.escondido {
+    display: none;
+}
+
+
+/* ---------- RODAPÉ ---------- */
+
+footer {
+    padding: 24px;
+
+    font-size: 13px;
+
+    color: #ffffff;
+
+    text-align: center;
+}
+
+
+/* ==================================================
+   RESPONSIVIDADE
+   ================================================== */
+
+@media (max-width: 1000px) {
+
+    .produtos {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .produtos {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 560px) {
+
+    .produtos {
+        grid-template-columns: 1fr;
+    }
+
+
+    #carrinho {
+        width: 100%;
+    }
+
+}
+
